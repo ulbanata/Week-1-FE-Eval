@@ -1,0 +1,40 @@
+#logo {
+  background: url('WLNTlogo.jpg');
+  height: 135px;
+  width: 569px;
+  margin: 0px auto;
+  background-repeat:no-repeat;
+}
+footer p{
+  text-align: center;
+}
+table {
+  margin: 0px auto;
+}
+h2, h3, h4, h5, h6 {
+  text-align: center;
+  padding: 5px 0;
+}
+.tabs-content p {
+  text-indent: 50px;
+  padding-left:100px;
+  padding-right:100px;
+}
+/*.large-3 {
+  border: 2px black solid;
+}*/
+header {
+  background: url('background.png');
+  background-repeat: horizontal;
+}
+.tabs dd {
+  top:0px !important;
+}
+.tabs dd > a {
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+.small-font {
+  font-size: 0.7em;
+  margin-bottom: 5px;
+}
