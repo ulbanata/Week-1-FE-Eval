@@ -4,6 +4,8 @@
     <title>WLNT 96.1-FM &amp; REDSKINRADIO.COM</title>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.3/css/foundation.css" />
     <link rel="stylesheet" href="override.css" />
+    <script src="http://www.nwrnetwork.com/listen/javascript/listen.js">
+    </script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/foundation.min.js'></script>
     <script src='WLNT.js'></script>
@@ -12,102 +14,105 @@
     <header>
       <div id="logo"></div>
     </header>
-    <div class="row">
-      <div class="large-3 columns">
-        <div class="row">
-          <h3>WLNT streams live on the web 24 hours a day!</h3>
-        </div>
-        <div class="row">
-          <h3>Listen on your iPhone!</h3>
-          <p>Download our app for your iPhone here.</p>
-        </div>
-        <div class="row">
-          <a href="http://www.accuweather.com/en/us/loudon-tn/37774/weather-forecast/335641" class="aw-widget-legal">
-          <!--
-          By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
-          -->
-          </a><div id="awcc1391790172526" class="aw-widget-current"  data-locationkey="335641" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1391790172526"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-        </div>
-        <div class="row">
-          <img src="loudonproud.jpg" />
-          <p>WLNT is a PROUD Member of the Loudon County Chamber Of Commerce &amp; A Member of the Loudon Merchant's and Property Owners Association.</p>
-        </div>
+    <div id="container">
+      <div class="row">
+	<div class="large-3 columns">
+	  <div class="row">
+	    <h3>WLNT streams live on the web 24 hours a day!</h3>
+	    <a id="playnow" href="javascript: openplayer('wlnt-fm');"></a>
+	  </div>
+	  <div class="row">
+	    <h3>Listen on your iPhone!</h3>
+	    <p>Download our app for your iPhone here.</p>
+	  </div>
+	  <div class="row">
+	    <a href="http://www.accuweather.com/en/us/loudon-tn/37774/weather-forecast/335641" class="aw-widget-legal">
+	    <!--
+	    By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+	    -->
+	    </a><div id="awcc1391790172526" class="aw-widget-current"  data-locationkey="335641" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1391790172526"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+	  </div>
+	  <div class="row">
+	    <img src="loudonproud.jpg" />
+	    <p>WLNT is a PROUD Member of the Loudon County Chamber Of Commerce &amp; A Member of the Loudon Merchant's and Property Owners Association.</p>
+	  </div>
+	</div>
+	<div class="large-9 columns">
+	  <dl class="tabs large-centered" data-tab>
+	    <dd class="active"><a href="#panel2-1">Programming</a></dd>
+	    <dd><a href="#panel2-2">Redskins</a></dd>
+	    <dd><a href="#panel2-3">Listening Tips</a></dd>
+	    <dd><a href="#panel2-4">Public Service Annoucements</a></dd>
+	  </dl>
+	  <div class="tabs-content">
+	    <div class="content active" id="panel2-1">
+	      <h2>Loudon's only locally owned and operated radio station!</h2>
+	      <h3>WLNT 96.1 FM-Loudon 107.1-FM Lenoir City/Farragut</h3>
+	      <h3>WLNT NOW BROADCASTING AT 107.1-FM IN LENOIR CITY</h3>
+	      <p>Servicing Lenoir City, Northeast Loudon County, Martel, Friendsville, Farragut, Tellico Village and other communities at 107.1-FM. WLNT utilizing translator W296CE, Lenoir City Tennessee.</p>
+	      <h3>WLNT SUNDAY AIRTIME NOW AVAILABLE:</h3>
+	      <p>If your church or religious group is interested in broadcasting your services on WLNT, please contact our office at 865-458-9563. WLNT provides the equipment, recording media and technical assistance in setting up your broadcast for recording. Low weekly rates are available with a term contract. Sunday airtime is limited and available on a first come basis.</p>
+
+	    </div>
+	    <div class="content" id="panel2-2">
+	      <h2>WLNT is the proud supporter of the Loudon Redskins with RedskinRadio.</h2>
+	      <h4>2013-2014 Redskin Basketball Broadcast schedule:</h4>
+	      <table>
+		<tr>
+		  <th>Date</th>
+		  <th>Opponent</th>
+		  <th>Location</th>
+		</tr>
+		<tr>
+		  <td>Feb. 4- Tuesday</td>
+		  <td>Sequoyah</td>
+		  <td>Away</td>
+		</tr>
+		<tr>
+		  <td>Feb. 6- Thursday</td>
+		  <td>William Blount</td>
+		  <td>Away</td>
+		</tr>
+		<tr>
+		  <td>Feb. 8- Saturday</td>
+		  <td>Lenoir City</td>
+		  <td>Home</td>
+		</tr>
+		<td>Feb. 10- Feb. ?</td>
+		<td>Tournament Coverage</td>
+		<td>Details soon!
+	      </table>
+	      <h4>Loudon Redskin Baseball</h4>
+		<p>Loudon Redskin Baseball is coming to WLNT and RedskinRadio.com. Again this year WLNT's Mike Thompson, Bob Elliot and Company bring you exciting live coverage of the Loudon Redskin Baseball Team. If you are a business owner and wish to have your message heard during WLNT's live broadcasts, contact Chip Lynn at 865-458-9563. Our first broadcast is planned for Saturday February 22nd.</p>
+	    </div>
+	    <div class="content" id="panel2-3">
+	      <h2>Improving Your Radio's Reception</h2>
+	      <p>From time to time, we receive a request from a listener asking what can be done to improve their reception of our FM signal. While the specific recommendations will vary, the following are some generalizations which may help if you are experiencing reception difficulty.</p>
+	      <p>It must be remembered that the process of delivering sound from a radio studio to your ears involves a complete system. This includes the station's transmitter and antenna, the listener's receiver and antenna and the transmission path between the two. This last is important because if there is a mountain between the transmitter and receiver, there is nothing that can be done to provide good reception.</p>
+
+	      <p>WLNT's transmitting system is maximized to operate at the maximum allowed power and to deliver the best signal over our licensed area(s). Steps to improving your reception should start with your antenna. If your receiver is a stereo component or console, there should be a pair of screw terminals on the back marked "FM antenna" or something similar.  If nothing is connected to these terminals, you need an antenna!!!   An antenna may be as simple as an inexpensive "twin-lead dipole" which can be purchased at most electronic or builder's supply stores. This will only be effective in the primary coverage area of the station, about 12 miles or so from the transmitter.  A 3-4 foot piece of speaker wire is better than nothing.  Ordinary TV "rabbit ears" will work reasonably well in this area as well.  For fringe-area reception, an outside antenna similar to a TV antenna is required. In fact, some TV antennas can be used for FM reception. Connecting an FM receiving antenna to the antenna input of the FM receiver and aim the antenna toward the WLNT transmitter. A good outside FM antenna (called a Yagi, after its inventor) can be purchased at most consumer electronic stores. Radio Shack  lists several good antennas in their website (catalog number 15-2163).</p>
+
+	      <p>Also, sensitive portables such as those manufactured by GRUNDIG or the GE SuperRadio are available which can be surprisingly effective.  We recommend the GE SuperRadio which is available on Ebay or from Amateur Electronic Supply: info@aesham.com or AES Cleveland 28940 Euclid Ave, Cleveland, OH 44092 800-321-3594 or 440-585-7388.
+	      Also, you can improve reception by keeping your radio, antenna and receiver away from noise generating electronic devices. Many newer devices have microprocessor circuits that induce "noise" onto the FM radio band that makes all reception worthless.  Several examples of devices to avoid are listed here: CD Players; Computers; Computer Monitors; Cable or Satellite boxes; VCR's; TV's; Electronic Games; Touchlamps; Neon Lights; Credit Card Machines; Cash Registers; Wireless Routers; Dimmer Switches for lighting; &amp; yes...Gas Pumps!</p>
+	    </div>
+	    <div class="content" id="panel2-4">
+	      <h2>Submit a Public Service Announcement to WLNT:</h2>
+	      <p>If your church, club, school or civic organization has an event coming up, WLNT is happy to help spread the word on our hourly community calendar.  Just fill out this form with what needs to be said. It is not necessary to contact us by phone, the form will automatically be routed to the appropriate department. Please send your information to us 2 weeks in advance in order to get maximum exposure, and be sure to include a phone number where listeners can call for more information, allow 4 days for your item to begin airing. A text only email is all we need, with the Who, What, When, Where & a contact phone number.</p>
+	    </div>
+	  </div>
+	</div>
       </div>
-      <div class="large-9 columns">
-        <dl class="tabs large-centered" data-tab>
-          <dd class="active"><a href="#panel2-1">Programming</a></dd>
-          <dd><a href="#panel2-2">Redskins</a></dd>
-          <dd><a href="#panel2-3">Listening Tips</a></dd>
-          <dd><a href="#panel2-4">Public Service Annoucements</a></dd>
-        </dl>
-        <div class="tabs-content">
-          <div class="content active" id="panel2-1">
-            <h2>Loudon's only locally owned and operated radio station!</h2>
-            <h3>WLNT 96.1 FM-Loudon 107.1-FM Lenoir City/Farragut</h3>
-            <h3>WLNT NOW BROADCASTING AT 107.1-FM IN LENOIR CITY</h3>
-            <p>Servicing Lenoir City, Northeast Loudon County, Martel, Friendsville, Farragut, Tellico Village and other communities at 107.1-FM. WLNT utilizing translator W296CE, Lenoir City Tennessee.</p>
-            <h3>WLNT SUNDAY AIRTIME NOW AVAILABLE:</h3>
-            <p>If your church or religious group is interested in broadcasting your services on WLNT, please contact our office at 865-458-9563. WLNT provides the equipment, recording media and technical assistance in setting up your broadcast for recording. Low weekly rates are available with a term contract. Sunday airtime is limited and available on a first come basis.</p>
-
-          </div>
-          <div class="content" id="panel2-2">
-            <h2>WLNT is the proud supporter of the Loudon Redskins with RedskinRadio.</h2>
-            <h4>2013-2014 Redskin Basketball Broadcast schedule:</h4>
-            <table>
-              <tr>
-                <th>Date</th>
-                <th>Opponent</th>
-                <th>Location</th>
-              </tr>
-              <tr>
-                <td>Feb. 4- Tuesday</td>
-                <td>Sequoyah</td>
-                <td>Away</td>
-              </tr>
-              <tr>
-                <td>Feb. 6- Thursday</td>
-                <td>William Blount</td>
-                <td>Away</td>
-              </tr>
-              <tr>
-                <td>Feb. 8- Saturday</td>
-                <td>Lenoir City</td>
-                <td>Home</td>
-              </tr>
-              <td>Feb. 10- Feb. ?</td>
-              <td>Tournament Coverage</td>
-              <td>Details soon!
-            </table>
-            <h4>Loudon Redskin Baseball</h4>
-              <p>Loudon Redskin Baseball is coming to WLNT and RedskinRadio.com. Again this year WLNT's Mike Thompson, Bob Elliot and Company bring you exciting live coverage of the Loudon Redskin Baseball Team. If you are a business owner and wish to have your message heard during WLNT's live broadcasts, contact Chip Lynn at 865-458-9563. Our first broadcast is planned for Saturday February 22nd.</p>
-          </div>
-          <div class="content" id="panel2-3">
-            <h2>Improving Your Radio's Reception</h2>
-            <p>From time to time, we receive a request from a listener asking what can be done to improve their reception of our FM signal. While the specific recommendations will vary, the following are some generalizations which may help if you are experiencing reception difficulty.</p>
-            <p>It must be remembered that the process of delivering sound from a radio studio to your ears involves a complete system. This includes the station's transmitter and antenna, the listener's receiver and antenna and the transmission path between the two. This last is important because if there is a mountain between the transmitter and receiver, there is nothing that can be done to provide good reception.</p>
-
-            <p>WLNT's transmitting system is maximized to operate at the maximum allowed power and to deliver the best signal over our licensed area(s). Steps to improving your reception should start with your antenna. If your receiver is a stereo component or console, there should be a pair of screw terminals on the back marked "FM antenna" or something similar.  If nothing is connected to these terminals, you need an antenna!!!   An antenna may be as simple as an inexpensive "twin-lead dipole" which can be purchased at most electronic or builder's supply stores. This will only be effective in the primary coverage area of the station, about 12 miles or so from the transmitter.  A 3-4 foot piece of speaker wire is better than nothing.  Ordinary TV "rabbit ears" will work reasonably well in this area as well.  For fringe-area reception, an outside antenna similar to a TV antenna is required. In fact, some TV antennas can be used for FM reception. Connecting an FM receiving antenna to the antenna input of the FM receiver and aim the antenna toward the WLNT transmitter. A good outside FM antenna (called a Yagi, after its inventor) can be purchased at most consumer electronic stores. Radio Shack  lists several good antennas in their website (catalog number 15-2163).</p>
-
-            <p>Also, sensitive portables such as those manufactured by GRUNDIG or the GE SuperRadio are available which can be surprisingly effective.  We recommend the GE SuperRadio which is available on Ebay or from Amateur Electronic Supply: info@aesham.com or AES Cleveland 28940 Euclid Ave, Cleveland, OH 44092 800-321-3594 or 440-585-7388.
-            Also, you can improve reception by keeping your radio, antenna and receiver away from noise generating electronic devices. Many newer devices have microprocessor circuits that induce "noise" onto the FM radio band that makes all reception worthless.  Several examples of devices to avoid are listed here: CD Players; Computers; Computer Monitors; Cable or Satellite boxes; VCR's; TV's; Electronic Games; Touchlamps; Neon Lights; Credit Card Machines; Cash Registers; Wireless Routers; Dimmer Switches for lighting; &amp; yes...Gas Pumps!</p>
-          </div>
-          <div class="content" id="panel2-4">
-            <h2>Submit a Public Service Announcement to WLNT:</h2>
-            <p>If your church, club, school or civic organization has an event coming up, WLNT is happy to help spread the word on our hourly community calendar.  Just fill out this form with what needs to be said. It is not necessary to contact us by phone, the form will automatically be routed to the appropriate department. Please send your information to us 2 weeks in advance in order to get maximum exposure, and be sure to include a phone number where listeners can call for more information, allow 4 days for your item to begin airing. A text only email is all we need, with the Who, What, When, Where & a contact phone number.</p>
-          </div>
-        </div>
-      </div>
+      <footer class="row">
+	<div class="large-12 columns" id="contactinfo">
+	  <p>Contact us! Richard "Chip" Lynn: 865-458-9563 &bull; WLNT RADIO &bull; PO Box 604 &bull; Loudon, TN 37774</p>
+	</div>
+	<div class="large-12 columns">
+	  <p class="small-font">&copy;2014 Community Radio of Loudon County Inc / WLNT Radio / WLNT Sports / Lynn Family Trust</p>
+	  <p class="small-font">
+	    All items on this website and those heard on WLNT, WLNT Sports, W235AZ, W296CE, WLNT's Web Streams, RedskinRadio, ReskinRadio.com, wlntfm.com, and the terms "Traditional Country Favorites" , "Redskin Radio", "SportsRoundtable", "Loudon's Hometown Station", "allhitschannel.com" are copyrighted material and may not be recorded, distributed, rebroadcast, transcribed, reprinted or otherwise re-used without written permission.
+	  </p>
+	</div>
+      </footer>
     </div>
-    <footer class="row">
-      <div class="large-12 columns" id="contactinfo">
-        <p>Contact us! Richard "Chip" Lynn: 865-458-9563 &bull; WLNT RADIO &bull; PO Box 604 &bull; Loudon, TN 37774</p>
-      </div>
-      <div class="large-12 columns">
-        <p class="small-font">&copy;2014 Community Radio of Loudon County Inc / WLNT Radio / WLNT Sports / Lynn Family Trust</p>
-        <p class="small-font">
-          All items on this website and those heard on WLNT, WLNT Sports, W235AZ, W296CE, WLNT's Web Streams, RedskinRadio, ReskinRadio.com, wlntfm.com, and the terms "Traditional Country Favorites" , "Redskin Radio", "SportsRoundtable", "Loudon's Hometown Station", "allhitschannel.com" are copyrighted material and may not be recorded, distributed, rebroadcast, transcribed, reprinted or otherwise re-used without written permission.
-        </p>
-      </div>
-    </footer>
   </body>
 </html>

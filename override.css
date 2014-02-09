@@ -1,5 +1,5 @@
 #logo {
-  background: url('WLNTlogo.jpg');
+  background: url('WLNTlogo2.png');
   height: 135px;
   width: 569px;
   margin: 0px auto;
@@ -14,17 +14,15 @@ table {
 h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 5px 0;
+  color: #A80022;
 }
 .tabs-content p {
   text-indent: 50px;
   padding-left:100px;
   padding-right:100px;
 }
-/*.large-3 {
-  border: 2px black solid;
-}*/
 header {
-  background: url('background.png');
+  background: url('background2.png');
   background-repeat: horizontal;
 }
 .tabs dd {
@@ -41,3 +39,32 @@ header {
 .tabs {
   margin: auto;
 }
+#playnow {
+  background: url('play_button.gif');
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  height: 75px;
+  width: 75px;
+  margin: auto;
+  display: block;
+}
+h3 {
+  font-size: 1.2em;
+}
+#container {
+  background-color: #D94709;
+}
+.row {
+  background-color: #FCDEBB !important;
+  color: #A80022;
+}
+.large-3 {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.tabs dd > a {
+ color: #A80022;
+ background-color: #FAC589;
+}
+p {
+  color: #8C001C;
